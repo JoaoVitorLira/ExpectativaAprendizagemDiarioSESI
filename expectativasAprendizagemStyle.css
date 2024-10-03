@@ -4,6 +4,10 @@ body {
   display: flex;
 }
 
+header{
+  display: none;
+}
+
 
 /* Começo aside Sesi */
 
@@ -218,7 +222,7 @@ body {
 /* as expectativas */
 #Expectativas {
   display: flex;
-  margin-bottom: 5%;
+  margin-top: 20px;
   justify-content: space-between;
   background-color: #E5383B;
   color: #fff;
@@ -250,8 +254,26 @@ body {
 }
 
 .hiddenContent{
-  width: 50%;
-  margin-top: 10px;
+  color: white;
+  margin: 0 5% 0 5% ;
   background-color: #e5383b83;
   padding: 25px;
+}
+
+@media screen and (max-width: 768px){
+  header{
+    display: flex;
+  }
+
+  .linha-vertical{
+    display: none;
+  }
+
+   #asideSesi{
+    display: none;
+   }
+
+   #mainSesi{
+    width: 100%;
+   }
 }
