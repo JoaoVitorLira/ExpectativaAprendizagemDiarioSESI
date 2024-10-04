@@ -49,15 +49,27 @@ expectativas.forEach((expectativa) => {
 });
 
 
+
 //Lógica do menu Mobile
 
 document.getElementById('iconeMobile').addEventListener('click', function() {
   const menuMobile = document.getElementById('boxIconMobile');
+  const header = document.getElementById('cabecalhoMobile');
+  const dataMobile = document.getElementById('dataMobile');
+  const iconeMobile = document.getElementById('iconeMobile');
   
   // Alterna a visibilidade do menu
   if (menuMobile.style.display === 'none' || menuMobile.style.display === '') {
       menuMobile.style.display = 'block';
+      header.style.backgroundColor = '#DA1E05';
+      dataMobile.textContent = 'data';
+      dataMobile.style.color = 'white';
+      iconeMobile.style.color = 'white';
   } else {
       menuMobile.style.display = 'none';
-  }
+      header.style.backgroundColor = 'white';
+      dataMobile.textContent = 'data';
+      dataMobile.style.color = 'black';
+      iconeMobile.style.color = '#DA1E05';
+  } 
 });
